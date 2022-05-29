@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Createorder2"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="19dp">
+
+    <EditText
+        android:id="@+id/Height"
+        android:layout_width="86dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/Width" />
+
+    <EditText
+        android:id="@+id/Weight"
+        android:layout_width="86dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/Width"
+        android:layout_width="86dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/Weight" />
+
+    <Button
+        android:id="@+id/Trucks"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/select"
+        android:gravity="left"
+        android:text="Trucks"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/Van"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:background="@drawable/select"
+        android:gravity="left"
+        android:text="Van"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/Trucks"
+        app:layout_constraintTop_toBottomOf="@+id/Trucks"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/Refrigeratedtruck"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:background="@drawable/select"
+        android:gravity="left"
+        android:text="Refrigerated truck"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/Van"
+        app:layout_constraintTop_toBottomOf="@+id/Van"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/Minitruck"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:background="@drawable/select"
+        android:gravity="left"
+        android:text="Mini-truck"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/Refrigeratedtruck"
+        app:layout_constraintTop_toBottomOf="@+id/Refrigeratedtruck"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/Other2"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:background="@drawable/select"
+        android:gravity="left"
+        android:text="Other"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/Minitruck"
+        app:layout_constraintTop_toBottomOf="@+id/Minitruck"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="133dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Goods type:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle type:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/Length" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="312dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Weight and dimension"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/goodstype" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="51dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:text="Weight:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="51dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="164dp"
+        android:text="  Width:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="51dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="72dp"
+        android:text="Length:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="51dp"
+        android:layout_height="21dp"
+        android:text="Height:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/Length"
+        android:layout_width="86dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/Weight" />
+
+    <Button
+        android:id="@+id/Create"
+        android:layout_width="254dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:text="Create order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Other2" />
+
+    <EditText
+        android:id="@+id/goodstype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="bottom|center_horizontal"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goods" />
+
+    <ImageButton
+        android:id="@+id/goods"
+        android:layout_width="175dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:background="@android:drawable/ic_menu_camera"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

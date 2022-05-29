@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="username"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tip2"
+        app:layout_constraintTop_toTopOf="@+id/Username" />
+
+
+    <TextView
+        android:id="@+id/tip2"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:text="password"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Password" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="201dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/tip2"
+        app:layout_constraintTop_toBottomOf="@+id/Username" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="201dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/tip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Create"
+        android:layout_width="111dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="60dp"
+        android:text="Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+    <Button
+        android:id="@+id/Signup"
+        android:layout_width="111dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:text="Sign up"
+        app:layout_constraintStart_toStartOf="@+id/Create"
+        app:layout_constraintTop_toBottomOf="@+id/Create" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
